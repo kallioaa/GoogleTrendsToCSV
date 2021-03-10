@@ -5,7 +5,6 @@ def main():
     kw_and_dates = pd.read_excel("../kw_and_dates.xlsx")
     downLoadTrends(kw_and_dates)
 
-
 def downLoadTrends(kw_and_dates):
     pytrends = TrendReq()
     for row in kw_and_dates.iterrows():
